@@ -1,0 +1,268 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --main-purple: #261447;
+    --main-darkpurple: #0d0221;
+    --main-lightred: #FF3864;
+    --main-orange: #FF6C11;
+    --main-lightblue: #2DE2E6;
+    --main-neonpink: #F6019D;
+    --main-yellow: #F9C80E;
+}
+
+/* Synthwave color palette from here: https://i.redd.it/aepphltiqy911.png */
+
+
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Raleway;
+    
+    
+}
+
+footer {
+    display: flex;
+    background: var(--main-purple);
+    color: white;
+    border-top: 4px solid var(--main-neonpink);
+    padding: 3rem;
+    font-size: 0.8rem;
+    justify-content: space-evenly;
+}
+
+
+#welcome-section {
+    height: 100vh;
+    background-image: linear-gradient(800deg, var(--main-darkpurple), var(--main-lightred));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 3rem;
+}
+
+
+
+#welcome-section h1 {
+    font-size: 4rem;
+}
+
+@media (max-width: 500px) {
+    #welcome-section {
+        padding: 0;
+    }
+
+    #welcome-section h1 {
+        font-size: 2.5rem;
+    }
+}
+
+#welcome-section p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--main-orange)
+}
+
+#projects {
+    background-image: linear-gradient(800deg, var(--main-lightblue), var(--main-neonpink));
+    text-align: center;
+    padding: 3rem;
+}
+
+#projects-header {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+#projects-header h2 {
+    font-size: 2.5rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    margin: auto;
+    max-width: 1280px;
+    z-index: 5;
+    
+}
+
+.projects-grid a {
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    #projects {
+        padding: 0.5rem;
+    }
+
+    .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    }
+
+    
+}
+
+.project-tile {
+    background: var(--main-purple);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 8px 7px 8px -4px rgba(0,0,0,0.58);
+    color: white;
+    transition: 120ms linear;
+}
+
+.project-tile img {
+    width: 100%;
+
+    
+}
+
+.project-tile p {
+    transition: 120ms linear;
+    font-size: 1.5rem;
+    padding: 1.5rem 0.5rem;
+}
+
+.project-tile:hover {
+    transform: scale(1.03);
+    color: var(--main-orange)
+}
+
+
+
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--main-purple);
+    z-index: 10;
+    
+}
+
+@media (max-width: 500px) {
+    .nav {
+        justify-content: center;
+    }
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+    list-style-type: none;
+    
+  }
+
+  @media (max-width: 500px) {
+    .nav-list {
+        margin: 0 0 0.7rem 0;
+    }
+  }
+
+.nav-list a {
+    display: block;
+    font-size: 1.8rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+    
+  }
+
+  @media (max-width: 500px) {
+    .nav-list a {
+        padding: 0.8rem;
+        font-size: 1.4rem;
+    }
+  }
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(800deg, var(--main-orange), var(--main-yellow));
+    color: white;
+    padding: 3rem;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    #contact {
+       height: auto;
+    }
+  }
+
+
+
+#contact h1 {
+    font-size: 4rem;
+    margin-bottom: 0.8rem;
+}
+
+@media (max-width: 500px) {
+    #contact h1 {
+       font-size: 2.5rem;
+    }
+  }
+
+.contact-container {
+    display: flex;
+    
+}
+
+
+@media (max-width: 500px) {
+   .contact-container {
+       margin-top: 2rem;
+       flex-direction: column;
+       
+    }
+  }
+
+.contact-links {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: 200ms ease-out;
+    
+}
+
+@media (max-width: 500px) {
+    .contact-links {
+        margin-top: 1rem;
+        font-size: 1rem;
+     }
+   }
+
+.contact-links a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    
+}
+
+.contact-links:hover {
+    transform: rotate(-30deg) scale(1.1);
+    
+}
+
+
+
